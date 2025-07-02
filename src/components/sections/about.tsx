@@ -6,10 +6,10 @@ export function About() {
       <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
         <div className="flex justify-center lg:order-last">
             <Image
-              src="https://placehold.co/400x400.png"
+              src="https://placehold.co/300x300.png"
               alt="Alif Fauzan"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
               className="rounded-full object-cover shadow-lg"
               data-ai-hint="drafter engineer portrait"
             />
