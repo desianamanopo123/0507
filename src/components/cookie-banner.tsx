@@ -46,7 +46,7 @@ export function CookieBanner() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50">
       <div className="container mx-auto p-4">
-          <div className="bg-secondary text-secondary-foreground p-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-secondary text-secondary-foreground p-3 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <Cookie className="h-6 w-6 shrink-0" />
               <p className="text-sm">
