@@ -1,5 +1,5 @@
 import type { Project } from '@/lib/types';
-import { Building2, FileText, Layers, PenTool, SquarePen, Construction, Wrench } from 'lucide-react';
+import { Building2, FileText, Layers, PenTool, SquarePen, Construction, Wrench, Cuboid, View } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Skill {
@@ -10,10 +10,8 @@ interface Skill {
 export const skills: Skill[] = [
   { name: 'AutoCAD', icon: SquarePen },
   { name: 'Revit', icon: Building2 },
-  { name: 'BIM Modeling', icon: Layers },
-  { name: 'Structural Detailing', icon: Construction },
-  { name: 'MEP Drafting', icon: Wrench },
-  { name: 'Tekla Structures', icon: PenTool },
+  { name: 'SolidWorks', icon: Cuboid },
+  { name: '3D Rendering', icon: View },
   { name: 'Blueprint Reading', icon: FileText },
 ];
 
