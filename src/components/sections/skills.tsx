@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { skills } from '@/lib/data';
+import Image from 'next/image';
 
 export function Skills() {
   return (
@@ -15,11 +16,17 @@ export function Skills() {
         </div>
         <div className="mx-auto grid max-w-5xl justify-center gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {skills.map(skill => {
-            const Icon = skill.icon;
             return (
               <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <CardHeader className="p-0 mb-4">
-                  <Icon className="w-10 h-10 text-primary" />
+                  <Image
+                    src={skill.imageUrl}
+                    alt={`${skill.name} logo`}
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                    data-ai-hint={skill.imageHint}
+                  />
                 </CardHeader>
                 <CardContent className="p-0">
                   <CardTitle className="text-md font-medium">{skill.name}</CardTitle>

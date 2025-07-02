@@ -10,3 +10,9 @@ export interface Project {
   logoUrl?: string;
   logoHint?: string;
 }
+
+export interface Skill {
+  name: string;
+  imageUrl: string;
+  imageHint: string;
+}

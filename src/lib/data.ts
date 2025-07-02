@@ -1,18 +1,31 @@
-import type { Project } from '@/lib/types';
-import { Building2, FileText, Layers, PenTool, SquarePen, Construction, Wrench, Cuboid, View } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-
-interface Skill {
-  name: string;
-  icon: LucideIcon;
-}
+import type { Project, Skill } from '@/lib/types';
 
 export const skills: Skill[] = [
-  { name: 'AutoCAD', icon: SquarePen },
-  { name: 'Revit', icon: Building2 },
-  { name: 'SolidWorks', icon: Cuboid },
-  { name: '3D Rendering', icon: View },
-  { name: 'Blueprint Reading', icon: FileText },
+  {
+    name: 'AutoCAD',
+    imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'autocad logo',
+  },
+  {
+    name: 'Revit',
+    imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'revit logo',
+  },
+  {
+    name: 'SolidWorks',
+    imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'solidworks logo',
+  },
+  {
+    name: '3D Rendering',
+    imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: '3d rendering',
+  },
+  {
+    name: 'Blueprint',
+    imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'blueprint icon',
+  },
 ];
 
 export const initialProjects: Project[] = [
