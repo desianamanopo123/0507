@@ -10,25 +10,23 @@ export function Hero() {
           Alif Fauzan
         </h1>
         <p className="max-w-[700px] text-lg text-foreground/80 sm:text-xl">
-          A dedicated Drafter Engineer specializing in high-risk building
-          construction, transforming complex designs into precise, actionable
-          blueprints.
+          Seorang Drafter Engineer berdedikasi dengan pengalaman lebih dari satu dekade, mengubah desain kompleks menjadi cetak biru yang presisi dan dapat ditindaklanjuti untuk konstruksi bangunan berisiko tinggi sejak 2014.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <Button asChild size="lg">
             <Link href="#projects">
-              View My Work
+              Lihat Karya Saya
             </Link>
           </Button>
           <Button asChild size="lg" variant="secondary">
             <Link href="/alif-fauzan-cv.pdf" download>
               <Download className="mr-2 h-5 w-5" />
-              Download CV
+              Unduh CV
             </Link>
           </Button>
           <Button asChild size="lg" variant="secondary">
             <Link href="#contact">
-              Contact Me
+              Hubungi Saya
             </Link>
           </Button>
         </div>

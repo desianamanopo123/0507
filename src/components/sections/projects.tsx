@@ -12,43 +12,33 @@ import { Skeleton } from '../ui/skeleton';
 const initialProjects: Project[] = [
   {
     id: 'proj1',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with a modern UI, payment integration, and an admin dashboard for managing products.',
+    title: 'Metropolis Tower: Structural Detailing',
+    description: 'Memimpin pembuatan gambar detail baja struktural dan beton bertulang untuk gedung pencakar langit komersial 40 lantai. Memastikan semua cetak biru mematuhi kode seismik dan spesifikasi teknik.',
     url: '#',
-    interactions: 150,
-    tags: ['React', 'Node.js', 'Stripe', 'PostgreSQL'],
+    interactions: 250,
+    tags: ['AutoCAD', 'Revit', 'Structural Steel', 'High-Rise'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'ecommerce website',
+    imageHint: 'skyscraper blueprint',
   },
   {
     id: 'proj2',
-    title: 'Task Management App',
-    description: 'A collaborative task management tool with features like drag-and-drop boards, real-time updates, and user authentication.',
+    title: 'Perluasan Pabrik Industri Apex',
+    description: 'Mengembangkan model 3D dan tata letak 2D terperinci untuk perluasan pabrik industri besar, termasuk perpipaan, penempatan peralatan, dan rencana pondasi menggunakan metodologi BIM.',
     url: '#',
-    interactions: 250,
-    tags: ['Next.js', 'Firebase', 'Tailwind CSS'],
+    interactions: 180,
+    tags: ['BIM', 'Plant 3D', 'P&ID', 'Industrial'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'task manager',
+    imageHint: 'industrial plant blueprint',
   },
   {
     id: 'proj3',
-    title: 'Portfolio Website',
-    description: 'This very portfolio website, built with Next.js and showcasing a clean design and AI-powered project curation.',
-    url: '#',
-    interactions: 80,
-    tags: ['Next.js', 'GenAI', 'Shadcn/UI'],
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'portfolio design',
-  },
-  {
-    id: 'proj4',
-    title: 'Weather App',
-    description: 'A simple yet elegant weather application that provides real-time weather data using a third-party API.',
+    title: 'Kompleks Hunian Mewah Azure Vista',
+    description: 'Menghasilkan satu set lengkap gambar arsitektur dan MEP (Mekanikal, Elektrikal, Plumbing) untuk kompleks hunian mewah, berkoordinasi dengan berbagai disiplin ilmu teknik.',
     url: '#',
     interactions: 120,
-    tags: ['React', 'API', 'CSS Modules'],
+    tags: ['Architectural Drafting', 'MEP', 'AutoCAD', 'Residential'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'weather interface',
+    imageHint: 'luxury apartment blueprint',
   },
 ];
 
@@ -68,7 +58,7 @@ export function Projects() {
           url,
           interactions,
         })),
-        userQuery: 'Showcase a variety of skills, especially in full-stack development.',
+        userQuery: 'Sorot proyek yang menunjukkan keahlian dalam penyusunan struktural dan industri berisiko tinggi.',
       });
 
       const orderedProjects = result.recommendedOrder.map(id => {
@@ -78,7 +68,7 @@ export function Projects() {
       setProjects(orderedProjects);
 
       toast({
-        title: 'Projects Reordered by AI ✨',
+        title: 'Proyek Diatur Ulang oleh AI ✨',
         description: result.reasoning,
         duration: 8000,
       });
@@ -86,8 +76,8 @@ export function Projects() {
       console.error('AI Curation Error:', error);
       toast({
         variant: 'destructive',
-        title: 'An error occurred',
-        description: 'Could not reorder projects. Please try again later.',
+        title: 'Terjadi kesalahan',
+        description: 'Tidak dapat mengatur ulang proyek. Silakan coba lagi nanti.',
       });
     } finally {
       setIsLoading(false);
@@ -99,14 +89,14 @@ export function Projects() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">My Creative Works</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Karya Kreatif Saya</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here are some of the projects I'm proud of. Click the button to let AI organize them to best highlight my skills.
+              Berikut adalah beberapa proyek yang saya banggakan. Klik tombol untuk membiarkan AI mengaturnya agar dapat menyoroti keahlian saya dengan baik.
             </p>
           </div>
           <Button onClick={handleAiCuration} disabled={isLoading} style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
             <Wand2 className="mr-2 h-4 w-4" />
-            {isLoading ? 'Thinking...' : 'Organize with AI'}
+            {isLoading ? 'Berpikir...' : 'Atur dengan AI'}
           </Button>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">
