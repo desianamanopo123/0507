@@ -26,6 +26,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardHeader>
       <CardContent className="p-6 flex-grow">
+        {project.logoUrl && (
+          <div className="mb-4 h-10 flex items-center">
+            <Image
+              src={project.logoUrl}
+              alt={`${project.title} logo`}
+              width={100}
+              height={40}
+              className="object-contain h-full w-auto"
+              data-ai-hint={project.logoHint}
+            />
+          </div>
+        )}
         <CardTitle className="mb-2 text-xl font-headline">{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardContent>

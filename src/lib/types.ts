@@ -7,4 +7,6 @@ export interface Project {
   tags: string[];
   imageUrl: string;
   imageHint: string;
+  logoUrl?: string;
+  logoHint?: string;
 }
