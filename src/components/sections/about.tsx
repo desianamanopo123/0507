@@ -10,10 +10,10 @@ export function About() {
             From Blueprint to Reality
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed">
-            For over a decade, since starting my journey in 2014, I have been at the forefront of drafting engineering. My passion lies in the meticulous process of transforming complex architectural and engineering visions into precise, actionable blueprints.
+            As a professional Drafter Engineer with a journey that began in 2014, I possess a deep passion for transforming complex architectural and engineering visions into precise, actionable blueprints. My work is the critical bridge between creative design and tangible construction, ensuring every detail is accurately captured and communicated.
           </p>
           <p className="text-muted-foreground md:text-xl/relaxed">
-            My expertise is rooted in high-risk building construction, where precision is not just a goal, but a necessity. I have a proven track record of delivering detailed drawings for large-scale commercial structures, industrial facilities, and intricate residential projects, ensuring every specification contributes to a successful and safe build.
+            I specialize in high-risk building construction, an environment where precision is paramount. My expertise includes delivering comprehensive drawing packages for large-scale commercial structures, industrial facilities, and custom residential projects. I am dedicated to maintaining the highest standards of accuracy and quality, ensuring that every project is built safely, on schedule, and to exact specifications.
           </p>
         </div>
         <div className="flex justify-center">
