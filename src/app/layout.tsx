@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Alif Fauzan | Drafter Engineer',
-  description: 'Seorang Drafter Engineer berdedikasi dengan pengalaman lebih dari satu dekade sejak 2014, yang berspesialisasi dalam konstruksi bangunan berisiko tinggi dan mengubah desain kompleks menjadi cetak biru yang presisi dan dapat ditindaklanjuti.',
+  description: 'A dedicated Drafter Engineer with over a decade of experience since 2014, specializing in high-risk building construction and transforming complex designs into precise, actionable blueprints.',
 };
 
 export default function RootLayout({

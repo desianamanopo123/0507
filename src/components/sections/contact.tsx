@@ -17,9 +17,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: 'Nama harus terdiri dari minimal 2 karakter.' }),
-  email: z.string().email({ message: 'Silakan masukkan alamat email yang valid.' }),
-  message: z.string().min(10, { message: 'Pesan harus terdiri dari minimal 10 karakter.' }),
+  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
+  email: z.string().email({ message: 'Please enter a valid email address.' }),
+  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
 export function Contact() {
@@ -36,8 +36,8 @@ export function Contact() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log('Form submitted:', values);
     toast({
-      title: 'Pesan Terkirim! ✨',
-      description: "Terima kasih telah menghubungi. Saya akan segera membalas Anda.",
+      title: 'Message Sent! ✨',
+      description: "Thank you for reaching out. I'll get back to you shortly.",
     });
     form.reset();
   }
@@ -46,9 +46,9 @@ export function Contact() {
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">Hubungi Saya</h2>
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">Contact Me</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Punya proyek atau hanya ingin menyapa? Saya akan senang mendengar dari Anda.
+            Have a project in mind or just want to say hello? I would love to hear from you.
           </p>
         </div>
         <div className="mx-auto w-full max-w-lg">
@@ -59,9 +59,9 @@ export function Contact() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nama</FormLabel>
+                    <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Nama Anda" {...field} />
+                      <Input placeholder="Your Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -74,7 +74,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="email.anda@contoh.com" {...field} />
+                      <Input placeholder="your.email@example.com" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -85,16 +85,16 @@ export function Contact() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Pesan</FormLabel>
+                    <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Ceritakan tentang proyek Anda..." className="min-h-[120px]" {...field} />
+                      <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <Button type="submit" className="w-full" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }} disabled={form.formState.isSubmitting}>
-                {form.formState.isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
+                {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </Form>

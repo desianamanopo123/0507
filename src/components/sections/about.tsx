@@ -5,15 +5,15 @@ export function About() {
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
         <div className="space-y-4">
-          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">Tentang Saya</div>
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">About Me</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Dari Cetak Biru Menjadi Realita
+            From Blueprint to Reality
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed">
-            Selama lebih dari satu dekade, sejak memulai perjalanan saya pada tahun 2014, saya telah berada di garis depan rekayasa drafting. Gairah saya terletak pada proses teliti dalam mengubah visi arsitektur dan rekayasa yang kompleks menjadi cetak biru yang presisi dan dapat ditindaklanjuti.
+            For over a decade, since starting my journey in 2014, I have been at the forefront of drafting engineering. My passion lies in the meticulous process of transforming complex architectural and engineering visions into precise, actionable blueprints.
           </p>
           <p className="text-muted-foreground md:text-xl/relaxed">
-            Keahlian saya berakar pada konstruksi bangunan berisiko tinggi, di mana presisi bukan hanya tujuan, tetapi suatu keharusan. Saya memiliki rekam jejak yang terbukti dalam memberikan gambar detail untuk struktur komersial skala besar, fasilitas industri, dan proyek perumahan yang rumit, memastikan setiap spesifikasi berkontribusi pada pembangunan yang sukses dan aman.
+            My expertise is rooted in high-risk building construction, where precision is not just a goal, but a necessity. I have a proven track record of delivering detailed drawings for large-scale commercial structures, industrial facilities, and intricate residential projects, ensuring every specification contributes to a successful and safe build.
           </p>
         </div>
         <div className="flex justify-center">

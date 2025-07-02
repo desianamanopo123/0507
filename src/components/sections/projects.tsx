@@ -13,7 +13,7 @@ const initialProjects: Project[] = [
   {
     id: 'proj1',
     title: 'Metropolis Tower: Structural Detailing',
-    description: 'Memimpin pembuatan gambar detail baja struktural dan beton bertulang untuk gedung pencakar langit komersial 40 lantai. Memastikan semua cetak biru mematuhi kode seismik dan spesifikasi teknik.',
+    description: 'Led the creation of detailed structural steel and reinforced concrete drawings for a 40-story commercial skyscraper. Ensured all blueprints complied with seismic codes and engineering specifications.',
     url: '#',
     interactions: 250,
     tags: ['AutoCAD', 'Revit', 'Structural Steel', 'High-Rise'],
@@ -22,8 +22,8 @@ const initialProjects: Project[] = [
   },
   {
     id: 'proj2',
-    title: 'Perluasan Pabrik Industri Apex',
-    description: 'Mengembangkan model 3D dan tata letak 2D terperinci untuk perluasan pabrik industri besar, termasuk perpipaan, penempatan peralatan, dan rencana pondasi menggunakan metodologi BIM.',
+    title: 'Apex Industrial Plant Expansion',
+    description: 'Developed detailed 3D models and 2D layouts for a major industrial plant expansion, including piping, equipment placement, and foundation plans using BIM methodology.',
     url: '#',
     interactions: 180,
     tags: ['BIM', 'Plant 3D', 'P&ID', 'Industrial'],
@@ -32,8 +32,8 @@ const initialProjects: Project[] = [
   },
   {
     id: 'proj3',
-    title: 'Kompleks Hunian Mewah Azure Vista',
-    description: 'Menghasilkan satu set lengkap gambar arsitektur dan MEP (Mekanikal, Elektrikal, Plumbing) untuk kompleks hunian mewah, berkoordinasi dengan berbagai disiplin ilmu teknik.',
+    title: 'Azure Vista Luxury Residential Complex',
+    description: 'Produced a full set of architectural and MEP (Mechanical, Electrical, Plumbing) drawings for a luxury residential complex, coordinating with various engineering disciplines.',
     url: '#',
     interactions: 120,
     tags: ['Architectural Drafting', 'MEP', 'AutoCAD', 'Residential'],
@@ -58,7 +58,7 @@ export function Projects() {
           url,
           interactions,
         })),
-        userQuery: 'Sorot proyek yang menunjukkan keahlian dalam penyusunan struktural dan industri berisiko tinggi.',
+        userQuery: 'Highlight projects that demonstrate expertise in high-risk structural and industrial drafting.',
       });
 
       const orderedProjects = result.recommendedOrder.map(id => {
@@ -68,7 +68,7 @@ export function Projects() {
       setProjects(orderedProjects);
 
       toast({
-        title: 'Proyek Diatur Ulang oleh AI ✨',
+        title: 'Projects Reordered by AI ✨',
         description: result.reasoning,
         duration: 8000,
       });
@@ -76,8 +76,8 @@ export function Projects() {
       console.error('AI Curation Error:', error);
       toast({
         variant: 'destructive',
-        title: 'Terjadi kesalahan',
-        description: 'Tidak dapat mengatur ulang proyek. Silakan coba lagi nanti.',
+        title: 'An error occurred',
+        description: 'Could not reorder the projects. Please try again later.',
       });
     } finally {
       setIsLoading(false);
@@ -89,14 +89,14 @@ export function Projects() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Karya Kreatif Saya</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">My Creative Works</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Berikut adalah beberapa proyek yang saya banggakan. Klik tombol untuk membiarkan AI mengaturnya agar dapat menyoroti keahlian saya dengan baik.
+              Here are some of the projects I am proud of. Click the button to let the AI organize them to best highlight my expertise.
             </p>
           </div>
           <Button onClick={handleAiCuration} disabled={isLoading} style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }}>
             <Wand2 className="mr-2 h-4 w-4" />
-            {isLoading ? 'Berpikir...' : 'Atur dengan AI'}
+            {isLoading ? 'Thinking...' : 'Curate with AI'}
           </Button>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">
