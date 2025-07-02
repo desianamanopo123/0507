@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="hero" className="relative flex h-[calc(100vh-56px)] flex-col items-center justify-center text-center">
       <div className="container flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
           Alif Fauzan
         </h1>
         <p className="max-w-[700px] text-lg text-foreground/80 sm:text-xl">
