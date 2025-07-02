@@ -21,10 +21,7 @@ export function About() {
           </div>
           <div className="space-y-4">
             <p className="text-muted-foreground md:text-xl/relaxed">
-              As a professional Drafter Engineer with a journey that began in 2014, I possess a deep passion for transforming complex architectural and engineering visions into precise, actionable blueprints. My work is the critical bridge between creative design and tangible construction, ensuring every detail is accurately captured and communicated.
-            </p>
-            <p className="text-muted-foreground md:text-xl/relaxed">
-              I specialize in high-risk building construction, an environment where precision is paramount. My expertise includes delivering comprehensive drawing packages for large-scale commercial structures, industrial facilities, and custom residential projects. I am dedicated to maintaining the highest standards of accuracy and quality, ensuring that every project is built safely, on schedule, and to exact specifications.
+              A dedicated Drafter Engineer since 2014, I specialize in transforming complex designs into precise, actionable blueprints for high-risk building construction. My work is the critical bridge between creative design and tangible construction, ensuring every project is built to exact specifications.
             </p>
           </div>
         </div>
