@@ -6,9 +6,6 @@ export function About() {
       <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
         <div className="space-y-4">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">About Me</div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            From Blueprint to Reality
-          </h2>
           <p className="text-muted-foreground md:text-xl/relaxed">
             As a professional Drafter Engineer with a journey that began in 2014, I possess a deep passion for transforming complex architectural and engineering visions into precise, actionable blueprints. My work is the critical bridge between creative design and tangible construction, ensuring every detail is accurately captured and communicated.
           </p>
