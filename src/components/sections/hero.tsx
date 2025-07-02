@@ -8,7 +8,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-grid animate-grid-pan" />
       <div className="absolute inset-0 -z-10 bg-background/80 backdrop-blur-sm" />
       <div className="container flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl font-headline">
           Alif Fauzan
         </h1>
         <p className="max-w-[700px] text-lg text-foreground/80 sm:text-xl">
