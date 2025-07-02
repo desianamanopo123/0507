@@ -92,11 +92,16 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'grid-pan': {
+          '0%': { 'background-position': '0 0' },
+          '100%': { 'background-position': '-40px -40px' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'background-pan': 'background-pan 15s ease infinite',
+        'grid-pan': 'grid-pan 20s linear infinite',
       },
     },
   },
