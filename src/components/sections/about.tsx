@@ -18,11 +18,11 @@ export function About() {
         </div>
         <div className="flex justify-center">
             <Image
-              src="https://placehold.co/600x600.png"
+              src="https://placehold.co/400x400.png"
               alt="Alif Fauzan"
-              width={500}
-              height={500}
-              className="rounded-xl object-cover shadow-lg"
+              width={400}
+              height={400}
+              className="rounded-full object-cover shadow-lg"
               data-ai-hint="drafter engineer portrait"
             />
         </div>
