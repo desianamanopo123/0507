@@ -1,22 +1,49 @@
 'use server';
 
+import { Resend } from 'resend';
+
 type ContactFormData = {
   name: string;
   email: string;
   message: string;
 };
 
+// Inisialisasi Resend dengan API Key Anda
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function submitContactForm(formData: ContactFormData) {
-  // Since we removed Zod, we do a very basic check on the server.
-  // The client-side form has `required` fields, so this is a fallback.
   if (!formData.name || !formData.email || !formData.message) {
     return { success: false, message: 'Please make sure all fields are filled.' };
   }
 
-  // Here you would typically send an email, save to a database, etc.
-  // For this example, we'll just log it to the server console.
-  console.log('New contact form submission:');
-  console.log(formData);
+  try {
+    const data = await resend.emails.send({
+      // Alamat 'from' ini disediakan oleh Resend untuk testing dan pengembangan.
+      // Setelah Anda memverifikasi domain Anda di Resend, Anda bisa mengubahnya
+      // menjadi 'noreply@domainanda.com'.
+      from: 'onboarding@resend.dev',
+      
+      // Ganti ini dengan alamat email pribadi Anda tempat Anda ingin menerima pesan.
+      to: ['alif.fauzan.1994@gmail.com'], 
+      
+      subject: `Pesan Baru dari Portofolio - ${formData.name}`,
+      
+      // Ini adalah template email yang akan Anda terima.
+      html: `
+        <h1>Pesan Baru dari Formulir Kontak</h1>
+        <p><strong>Nama:</strong> ${formData.name}</p>
+        <p><strong>Email:</strong> ${formData.email}</p>
+        <hr>
+        <h2>Pesan:</h2>
+        <p>${formData.message}</p>
+      `
+    });
 
-  return { success: true, message: 'Message sent successfully!' };
+    console.log('Email sent successfully:', data);
+    return { success: true, message: 'Message sent successfully!' };
+
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return { success: false, message: 'Sorry, something went wrong while sending the message.' };
+  }
 }
