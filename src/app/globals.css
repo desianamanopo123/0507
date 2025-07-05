@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    /* Blueprint Theme */
-    --background: 220 15% 96%; /* Soft blueprint gray */
-    --foreground: 222 47% 11%; /* Dark slate */
+    /* Definitive Blueprint Theme */
+    --background: 210 20% 94%;
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%; /* White cards */
+    --card: 210 20% 98%;
     --card-foreground: 222 47% 11%;
 
-    --popover: 0 0% 100%;
+    --popover: 210 20% 98%;
     --popover-foreground: 222 47% 11%;
     
-    --primary: 231 50% 48%; /* Deep Blue */
+    --primary: 221 83% 53%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 15% 92%; /* Slightly darker gray for secondary elements */
+    --secondary: 210 20% 89%;
     --secondary-foreground: 222 47% 11%;
     
-    --muted: 220 15% 88%;
+    --muted: 210 20% 85%;
     --muted-foreground: 215 20% 45%;
 
-    --accent: 174 70% 35%; /* Teal */
+    --accent: 173 96% 36%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 231 50% 48%;
+    --border: 210 20% 87%;
+    --input: 210 20% 87%;
+    --ring: 221 83% 53%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -44,25 +44,25 @@
  
   .dark {
     /* Dark Blueprint Theme */
-    --background: 228 9% 10%; /* Dark slate background */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
-    --card: 228 9% 12%;
+    --card: 222 47% 14%;
     --card-foreground: 210 40% 98%;
-    --popover: 228 9% 10%;
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
-    --primary: 231 50% 58%; /* Lighter deep blue for dark mode */
-    --primary-foreground: 231 83% 10%;
-    --secondary: 228 9% 17%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 215 28% 17%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 228 9% 17%;
-    --muted-foreground: 215 14% 65%;
-    --accent: 174 70% 45%; /* Lighter teal for dark mode */
-    --accent-foreground: 174 100% 10%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 228 9% 22%;
-    --input: 228 9% 22%;
-    --ring: 231 83% 63%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 173 96% 36%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 217 91% 60%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -85,9 +85,9 @@
     background-size: 200% 200%;
     background-image: linear-gradient(
       -45deg,
-      hsl(228 9% 10%),
-      hsl(228 9% 12%),
-      hsl(228 9% 10%)
+      hsl(222 47% 11%),
+      hsl(222 47% 14%),
+      hsl(222 47% 11%)
     );
     animation: background-pan 15s ease infinite;
   }
