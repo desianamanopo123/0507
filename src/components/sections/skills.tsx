@@ -5,11 +5,11 @@ import Image from 'next/image';
 export function Skills() {
   return (
     <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+      <div className="container px-6 md:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">My Technical Expertise</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl">
+            <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed lg:text-xl/relaxed">
               A collection of the technologies and tools I master, while continuously learning and expanding my skillset.
             </p>
           </div>

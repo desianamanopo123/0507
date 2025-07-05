@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function About() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+      <div className="container px-6 md:px-8">
         <div className="text-center mb-12">
            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium mb-4">About Me</div>
            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Bridging Design and Construction</h2>
@@ -20,7 +20,7 @@ export function About() {
               />
           </div>
           <div className="space-y-4">
-            <p className="text-muted-foreground md:text-xl">
+            <p className="text-muted-foreground md:text-lg/relaxed lg:text-xl/relaxed">
               A dedicated Drafter Engineer since 2014, I specialize in transforming complex designs into precise, actionable blueprints.
             </p>
           </div>

@@ -9,11 +9,11 @@ export function Projects() {
 
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
-      <div className="container px-4 md:px-6">
+      <div className="container px-6 md:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Work Experience</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl">
+            <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed lg:text-xl/relaxed">
               Here are some of the projects I am proud of.
             </p>
           </div>

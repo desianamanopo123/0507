@@ -7,8 +7,8 @@ export function Hero() {
     <section id="hero" className="relative flex h-[calc(100vh-56px)] flex-col items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-grid animate-grid-pan" />
       <div className="absolute inset-0 -z-10 bg-background/80 backdrop-blur-sm" />
-      <div className="container flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl font-headline">
+      <div className="container flex flex-col items-center gap-6 px-6 md:px-8">
+        <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline">
           Alif Fauzan
         </h1>
         <p className="max-w-[700px] text-lg text-foreground/80 md:text-xl">
