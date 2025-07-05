@@ -14,7 +14,7 @@ export function Skills() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl justify-center gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-5xl justify-center gap-6 py-12 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
           {skills.map(skill => {
             return (
               <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
