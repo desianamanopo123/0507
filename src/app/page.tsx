@@ -11,7 +11,6 @@ import { Skills } from '@/components/sections/skills';
 import { Contact } from '@/components/sections/contact';
 import { ScrollToTop } from '@/components/scroll-to-top';
 import { Preloader } from '@/components/preloader';
-import { CookieBanner } from '@/components/cookie-banner';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +39,6 @@ export default function Home() {
         </main>
         <Footer />
         <ScrollToTop />
-        <CookieBanner />
       </div>
     </>
   );
