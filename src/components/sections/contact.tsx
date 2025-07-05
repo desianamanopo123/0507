@@ -65,7 +65,7 @@ export function Contact() {
                 control={form.control}
                 name="name"
                 render={({ field }) => (
-                  <FormItem className="text-center">
+                  <FormItem className="text-left">
                     <FormLabel>Name</FormLabel>
                     <FormControl>
                       <Input placeholder="Your Name" {...field} required />
@@ -78,7 +78,7 @@ export function Contact() {
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem className="text-center">
+                  <FormItem className="text-left">
                     <FormLabel>Email</FormLabel>
                     <FormControl>
                       <Input type="email" placeholder="your.email@example.com" {...field} required />
@@ -91,7 +91,7 @@ export function Contact() {
                 control={form.control}
                 name="message"
                 render={({ field }) => (
-                  <FormItem className="text-center">
+                  <FormItem className="text-left">
                     <FormLabel>Message</FormLabel>
                     <FormControl>
                       <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} required minLength={10} />
