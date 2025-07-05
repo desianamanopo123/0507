@@ -11,7 +11,7 @@ export function About() {
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
           <div className="flex justify-center md:order-last">
               <Image
-                src="https://placehold.co/300x300.png"
+                src="/images/profile/profile-picture.png"
                 alt="[Nama Anda]"
                 width={300}
                 height={300}
