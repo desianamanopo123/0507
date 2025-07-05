@@ -58,7 +58,7 @@ export function Contact() {
             Have a project in mind or just want to say hello? I would love to hear from you.
           </p>
         </div>
-        <div className="w-full max-w-lg">
+        <div className="mx-auto w-full max-w-lg">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
               <FormField
