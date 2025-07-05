@@ -2,9 +2,6 @@ import type { Project } from '@/lib/types';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from './ui/button';
-import { ArrowUpRight } from 'lucide-react';
 
 interface ProjectCardProps {
   project: Project;
@@ -39,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <CardTitle className="mb-2 text-xl font-headline">{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardContent>
-      <CardFooter className="flex flex-col items-start gap-4 p-6 pt-0">
+      <CardFooter className="p-6 pt-0">
         <div className="flex flex-wrap gap-2">
           {project.tags.map(tag => (
             <Badge key={tag} variant="secondary">
@@ -47,12 +44,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </Badge>
           ))}
         </div>
-        <Button asChild variant="outline" size="sm" className="mt-auto">
-          <Link href={project.url} target="_blank" rel="noopener noreferrer">
-            View Project
-            <ArrowUpRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
       </CardFooter>
     </Card>
   );
