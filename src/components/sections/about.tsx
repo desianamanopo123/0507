@@ -11,11 +11,11 @@ export function About() {
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
           <div className="flex justify-center md:order-last">
               <Image
-                src="https://placehold.co/250x250.png"
+                src="https://placehold.co/300x300.png"
                 alt="Alif Fauzan"
-                width={250}
-                height={250}
-                className="rounded-full object-cover shadow-lg"
+                width={300}
+                height={300}
+                className="rounded-full object-cover shadow-lg w-48 h-48 md:w-64 md:h-64"
               />
           </div>
           <div className="space-y-4">

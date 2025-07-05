@@ -24,7 +24,7 @@ export function Skills() {
                     alt={`${skill.name} logo`}
                     width={64}
                     height={64}
-                    className="h-16 w-16 object-contain"
+                    className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
                   />
                 </CardHeader>
                 <CardContent className="p-0">
