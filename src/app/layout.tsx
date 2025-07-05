@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: 'Rendianto Priadi | Drafter Engineer',
   description: 'A dedicated Drafter Engineer with over a decade of experience since 2014, specializing in high-risk building construction and transforming complex designs into precise, actionable blueprints.',
   icons: {
-    icon: 'data:,',
+    icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=',
   },
 };
 
