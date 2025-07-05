@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
 
 export function Hero() {
@@ -18,12 +18,6 @@ export function Hero() {
           <Button asChild size="lg">
             <Link href="#projects">
               View My Work
-            </Link>
-          </Button>
-          <Button asChild size="lg" variant="secondary">
-            <Link href="/alif-fauzan-cv.pdf" download>
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
             </Link>
           </Button>
           <Button asChild size="lg" variant="secondary">

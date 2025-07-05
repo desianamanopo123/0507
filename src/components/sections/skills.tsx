@@ -25,7 +25,6 @@ export function Skills() {
                     width={64}
                     height={64}
                     className="h-16 w-16 object-contain"
-                    data-ai-hint={skill.hint}
                   />
                 </CardHeader>
                 <CardContent className="p-0">

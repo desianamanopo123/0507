@@ -4,27 +4,22 @@ export const skills: Skill[] = [
   {
     name: 'AutoCAD',
     imageUrl: 'https://placehold.co/100x100.png',
-    hint: 'autocad logo',
   },
   {
     name: 'Revit',
     imageUrl: 'https://placehold.co/100x100.png',
-    hint: 'revit logo',
   },
   {
     name: 'SolidWorks',
     imageUrl: 'https://placehold.co/100x100.png',
-    hint: 'solidworks logo',
   },
   {
     name: '3D Rendering',
     imageUrl: 'https://placehold.co/100x100.png',
-    hint: '3d render',
   },
   {
     name: 'Blueprint',
     imageUrl: 'https://placehold.co/100x100.png',
-    hint: 'blueprint scroll',
   },
 ];
 

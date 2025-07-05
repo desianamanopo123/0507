@@ -9,5 +9,4 @@ export interface Project {
 export interface Skill {
   name: string;
   imageUrl: string;
-  hint: string;
 }
