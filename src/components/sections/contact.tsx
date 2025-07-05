@@ -1,8 +1,6 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -17,16 +15,17 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
-});
+// Define the shape of our form data.
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 export function Contact() {
   const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  // Simplified useForm hook without any resolver.
+  const form = useForm<FormData>({
     defaultValues: {
       name: '',
       email: '',
@@ -34,7 +33,7 @@ export function Contact() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: FormData) {
     const result = await submitContactForm(values);
 
     if (result.success) {
@@ -71,7 +70,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Your Name" {...field} />
+                      <Input placeholder="Your Name" {...field} required />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -84,7 +83,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="your.email@example.com" {...field} />
+                      <Input type="email" placeholder="your.email@example.com" {...field} required />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -97,7 +96,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} />
+                      <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} required minLength={10} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

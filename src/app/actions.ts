@@ -1,24 +1,22 @@
 'use server';
 
-import { z } from 'zod';
+type ContactFormData = {
+  name: string;
+  email: string;
+  message: string;
+};
 
-const contactSchema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
-  message: z.string().min(10),
-});
-
-export async function submitContactForm(formData: unknown) {
-  const parsed = contactSchema.safeParse(formData);
-
-  if (!parsed.success) {
-    return { success: false, message: 'Invalid form data.' };
+export async function submitContactForm(formData: ContactFormData) {
+  // Since we removed Zod, we do a very basic check on the server.
+  // The client-side form has `required` fields, so this is a fallback.
+  if (!formData.name || !formData.email || !formData.message) {
+    return { success: false, message: 'Please make sure all fields are filled.' };
   }
 
   // Here you would typically send an email, save to a database, etc.
   // For this example, we'll just log it to the server console.
   console.log('New contact form submission:');
-  console.log(parsed.data);
+  console.log(formData);
 
   return { success: true, message: 'Message sent successfully!' };
 }
