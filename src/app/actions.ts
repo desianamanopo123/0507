@@ -9,8 +9,11 @@ type ContactFormData = {
 };
 
 export async function submitContactForm(formData: ContactFormData) {
-  if (!process.env.RESEND_API_KEY) {
-    console.error('RESEND_API_KEY is not set. Email sending is disabled.');
+  const apiKey = process.env.RESEND_API_KEY;
+  const emailTo = process.env.EMAIL_TO;
+
+  if (!apiKey || !emailTo) {
+    console.error('RESEND_API_KEY or EMAIL_TO is not set. Email sending is disabled.');
     return { 
       success: false, 
       message: 'The email service is currently unavailable. Please try again later.' 
@@ -21,13 +24,14 @@ export async function submitContactForm(formData: ContactFormData) {
     return { success: false, message: 'Please make sure all fields are filled.' };
   }
   
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = new Resend(apiKey);
 
   try {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: ['alif.fauzan.1994@gmail.com'], 
+      to: [emailTo], 
       subject: `New Message from Portfolio - ${formData.name}`,
+      reply_to: formData.email,
       html: `
         <h1>New message from Contact Form</h1>
         <p><strong>Name:</strong> ${formData.name}</p>
