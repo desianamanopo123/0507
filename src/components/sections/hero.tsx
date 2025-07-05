@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
@@ -9,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-background/80 backdrop-blur-sm" />
       <div className="container flex flex-col items-center gap-6">
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl font-headline">
-          [Nama Anda]
+          Rendianto Priadi
         </h1>
         <p className="max-w-[700px] text-lg text-foreground/80 md:text-xl">
           A dedicated Drafter Engineer with over a decade of experience, transforming complex designs into precise, actionable blueprints for high-risk building construction since 2014.

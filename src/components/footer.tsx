@@ -15,7 +15,7 @@ export function Footer() {
       <div className="container flex items-center justify-center">
         <div className="flex items-center space-x-2">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear || new Date().getFullYear()} [Nama Anda]. All rights reserved.
+            &copy; {currentYear || new Date().getFullYear()} Rendianto Priadi. All rights reserved.
           </p>
         </div>
       </div>

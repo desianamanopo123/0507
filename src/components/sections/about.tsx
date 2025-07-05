@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 export function About() {
@@ -12,7 +13,7 @@ export function About() {
           <div className="flex justify-center md:order-last">
               <Image
                 src="/images/profile/profile-picture.png"
-                alt="[Nama Anda]"
+                alt="Rendianto Priadi"
                 width={300}
                 height={300}
                 className="rounded-full object-cover shadow-lg w-48 h-48 md:w-64 md:h-64"

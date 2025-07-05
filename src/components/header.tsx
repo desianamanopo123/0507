@@ -1,3 +1,4 @@
+
 'use client';
 
 import { DraftingCompass, Menu } from 'lucide-react';
@@ -19,7 +20,7 @@ export function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <DraftingCompass className="h-6 w-6" />
-            <span className="font-bold">[Nama Anda]</span>
+            <span className="font-bold">Rendianto Priadi</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
@@ -46,7 +47,7 @@ export function Header() {
                 <div className="grid gap-4 py-4">
                   <Link href="/" className="mb-4 flex items-center space-x-2">
                      <DraftingCompass className="h-6 w-6" />
-                     <span className="font-bold">[Nama Anda]</span>
+                     <span className="font-bold">Rendianto Priadi</span>
                   </Link>
                   <nav className="grid gap-2">
                     {navLinks.map(link => (
