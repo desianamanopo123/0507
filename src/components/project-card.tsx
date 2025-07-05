@@ -17,7 +17,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alt={project.title}
             width={600}
             height={400}
-            data-ai-hint={project.hint}
             className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
           />
         </div>
