@@ -8,8 +8,8 @@ export function About() {
            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium mb-4">About Me</div>
            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Bridging Design and Construction</h2>
         </div>
-        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="flex justify-center lg:order-last">
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
+          <div className="flex justify-center md:order-last">
               <Image
                 src="https://placehold.co/250x250.png"
                 alt="Alif Fauzan"
