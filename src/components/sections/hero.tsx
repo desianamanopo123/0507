@@ -11,7 +11,7 @@ export function Hero() {
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl font-headline">
           Alif Fauzan
         </h1>
-        <p className="max-w-[700px] text-lg text-foreground/80 sm:text-xl">
+        <p className="max-w-[700px] text-lg text-foreground/80 md:text-xl">
           A dedicated Drafter Engineer with over a decade of experience, transforming complex designs into precise, actionable blueprints for high-risk building construction since 2014.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">

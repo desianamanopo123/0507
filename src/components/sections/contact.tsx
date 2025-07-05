@@ -57,7 +57,7 @@ export function Contact() {
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">Contact Me</h2>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
             Have a project in mind or just want to say hello? I would love to hear from you.
           </p>
         </div>

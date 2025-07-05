@@ -20,8 +20,8 @@ export function About() {
               />
           </div>
           <div className="space-y-4">
-            <p className="text-muted-foreground md:text-xl/relaxed">
-              A dedicated Drafter Engineer since 2014, I specialize in transforming complex designs into precise, actionable blueprints for high-risk building construction. My work is the critical bridge between creative design and tangible construction, ensuring every project is built to exact specifications.
+            <p className="text-muted-foreground md:text-xl">
+              A dedicated Drafter Engineer since 2014, I specialize in transforming complex designs into precise, actionable blueprints.
             </p>
           </div>
         </div>
