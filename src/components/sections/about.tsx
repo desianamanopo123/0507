@@ -15,6 +15,7 @@ export function About() {
                 alt="Alif Fauzan"
                 width={250}
                 height={250}
+                data-ai-hint="portrait person"
                 className="rounded-full object-cover shadow-lg"
               />
           </div>

@@ -24,6 +24,7 @@ export function Skills() {
                     alt={`${skill.name} logo`}
                     width={64}
                     height={64}
+                    data-ai-hint={skill.hint}
                     className="h-16 w-16 object-contain"
                   />
                 </CardHeader>
