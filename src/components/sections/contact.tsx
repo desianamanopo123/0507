@@ -15,6 +15,7 @@ export function Contact() {
         </div>
         <div className="mx-auto w-full max-w-sm space-y-4">
            <Button asChild size="lg" variant="accent">
+            {/* Ubah alamat email di baris di bawah ini */}
             <Link href="mailto:rendianto.priadi@example.com">
               Send an Email
             </Link>
