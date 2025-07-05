@@ -60,12 +60,12 @@ export function Contact() {
         </div>
         <div className="w-full max-w-lg">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-center">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="text-center">
                     <FormLabel>Name</FormLabel>
                     <FormControl>
                       <Input placeholder="Your Name" {...field} required />
@@ -78,7 +78,7 @@ export function Contact() {
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="text-center">
                     <FormLabel>Email</FormLabel>
                     <FormControl>
                       <Input type="email" placeholder="your.email@example.com" {...field} required />
@@ -91,7 +91,7 @@ export function Contact() {
                 control={form.control}
                 name="message"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="text-center">
                     <FormLabel>Message</FormLabel>
                     <FormControl>
                       <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} required minLength={10} />
