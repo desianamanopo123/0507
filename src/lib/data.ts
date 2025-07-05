@@ -3,27 +3,27 @@ import type { Project, Skill } from '@/lib/types';
 export const skills: Skill[] = [
   {
     name: 'AutoCAD',
-    imageUrl: 'https://placehold.co/100x100.png',
+    imageUrl: '/images/skills/autocad.png',
     imageHint: 'architectural drawing',
   },
   {
     name: 'Revit',
-    imageUrl: 'https://placehold.co/100x100.png',
+    imageUrl: '/images/skills/revit.png',
     imageHint: '3d model',
   },
   {
     name: 'SolidWorks',
-    imageUrl: 'https://placehold.co/100x100.png',
+    imageUrl: '/images/skills/solidworks.png',
     imageHint: 'mechanical design',
   },
   {
     name: '3D Rendering',
-    imageUrl: 'https://placehold.co/100x100.png',
+    imageUrl: '/images/skills/3d-rendering.png',
     imageHint: '3d render',
   },
   {
     name: 'Blueprint',
-    imageUrl: 'https://placehold.co/100x100.png',
+    imageUrl: '/images/skills/blueprint.png',
     imageHint: 'blueprint plan',
   },
 ];
