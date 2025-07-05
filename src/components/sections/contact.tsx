@@ -60,7 +60,7 @@ export function Contact() {
         </div>
         <div className="w-full max-w-lg">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-left">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-center">
               <FormField
                 control={form.control}
                 name="name"
