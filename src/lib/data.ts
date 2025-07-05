@@ -4,27 +4,22 @@ export const skills: Skill[] = [
   {
     name: 'AutoCAD',
     imageUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'autocad logo',
   },
   {
     name: 'Revit',
     imageUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'revit logo',
   },
   {
     name: 'SolidWorks',
     imageUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'solidworks logo',
   },
   {
     name: '3D Rendering',
     imageUrl: 'https://placehold.co/100x100.png',
-    imageHint: '3d rendering',
   },
   {
     name: 'Blueprint',
     imageUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'blueprint icon',
   },
 ];
 
@@ -37,9 +32,7 @@ export const initialProjects: Project[] = [
     interactions: 250,
     tags: ['Pertamina', 'Spatial Data', 'Data Collection'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'oil gas pipeline',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj2',
@@ -49,9 +42,7 @@ export const initialProjects: Project[] = [
     interactions: 240,
     tags: ['Fiber Optic', 'Telecommunications', 'Infrastructure'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'fiber optic cables',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj3',
@@ -61,9 +52,7 @@ export const initialProjects: Project[] = [
     interactions: 220,
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'modern hospital building',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj4',
@@ -73,9 +62,7 @@ export const initialProjects: Project[] = [
     interactions: 215,
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'luxury hotel lobby',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj5',
@@ -85,9 +72,7 @@ export const initialProjects: Project[] = [
     interactions: 180,
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'hospital corridor',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj6',
@@ -97,9 +82,7 @@ export const initialProjects: Project[] = [
     interactions: 170,
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'historic hotel facade',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj7',
@@ -109,9 +92,7 @@ export const initialProjects: Project[] = [
     interactions: 190,
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'modern hospital room',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj8',
@@ -121,9 +102,7 @@ export const initialProjects: Project[] = [
     interactions: 195,
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'hospital reception',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj9',
@@ -133,9 +112,7 @@ export const initialProjects: Project[] = [
     interactions: 160,
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'modern hotel room',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj10',
@@ -145,9 +122,7 @@ export const initialProjects: Project[] = [
     interactions: 150,
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Upgrade'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'electrical substation',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj11',
@@ -157,9 +132,7 @@ export const initialProjects: Project[] = [
     interactions: 140,
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Installation'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'power lines sunset',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
   {
     id: 'proj12',
@@ -169,8 +142,6 @@ export const initialProjects: Project[] = [
     interactions: 135,
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Installation'],
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'control room screens',
     logoUrl: 'https://placehold.co/100x40.png',
-    logoHint: 'company logo',
   },
 ];

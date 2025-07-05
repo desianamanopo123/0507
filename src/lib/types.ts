@@ -6,13 +6,10 @@ export interface Project {
   interactions: number;
   tags: string[];
   imageUrl: string;
-  imageHint: string;
   logoUrl?: string;
-  logoHint?: string;
 }
 
 export interface Skill {
   name: string;
   imageUrl: string;
-  imageHint: string;
 }

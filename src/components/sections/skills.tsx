@@ -9,7 +9,7 @@ export function Skills() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">My Technical Expertise</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed lg:text-xl/relaxed">
+            <p className="max-w-[900px] text-muted-foreground md:text-lg lg:text-xl">
               A collection of the technologies and tools I master, while continuously learning and expanding my skillset.
             </p>
           </div>
@@ -25,7 +25,6 @@ export function Skills() {
                     width={64}
                     height={64}
                     className="h-16 w-16 object-contain"
-                    data-ai-hint={skill.imageHint}
                   />
                 </CardHeader>
                 <CardContent className="p-0">
