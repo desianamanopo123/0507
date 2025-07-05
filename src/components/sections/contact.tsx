@@ -19,9 +19,6 @@ export function Contact() {
               Send an Email
             </Link>
           </Button>
-          <p className="text-xs text-muted-foreground">
-            Please replace the placeholder email with your actual email address.
-          </p>
         </div>
       </div>
     </section>
