@@ -18,7 +18,7 @@ export function Projects() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid w-full max-w-7xl items-start gap-8 py-12 md:gap-12 [grid-template-columns:repeat(auto-fit,minmax(320px,1fr))]">
           {projects.map(project => (
               <ProjectCard key={project.id} project={project} />
             ))}
