@@ -1,3 +1,4 @@
+
 import type { Project, Skill } from '@/lib/types';
 
 export const skills: Skill[] = [
