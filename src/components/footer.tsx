@@ -1,6 +1,6 @@
+
 'use client';
 
-import { CookieBanner } from './cookie-banner';
 import { useState, useEffect } from 'react';
 
 export function Footer() {
@@ -19,7 +19,6 @@ export function Footer() {
           </p>
         </div>
       </div>
-      <CookieBanner />
     </footer>
   );
 }
