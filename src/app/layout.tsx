@@ -20,9 +20,6 @@ const fontHeadline = Inter({
 export const metadata: Metadata = {
   title: 'Rendianto Priadi | Drafter Engineer',
   description: 'A dedicated Drafter Engineer with over a decade of experience since 2014, specializing in high-risk building construction and transforming complex designs into precise, actionable blueprints.',
-  icons: {
-    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22></svg>',
-  },
 };
 
 export default function RootLayout({
