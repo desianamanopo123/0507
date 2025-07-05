@@ -4,7 +4,6 @@ export interface Project {
   description: string;
   tags: string[];
   imageUrl: string;
-  logoUrl?: string;
 }
 
 export interface Skill {
