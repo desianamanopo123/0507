@@ -9,7 +9,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
-      <div className="container px-6 md:px-8">
+      <div className="container">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Work Experience</h2>
