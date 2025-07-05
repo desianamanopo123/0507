@@ -15,7 +15,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 
-// Define the shape of our form data.
 type FormData = {
   name: string;
   email: string;
@@ -24,7 +23,6 @@ type FormData = {
 
 export function Contact() {
   const { toast } = useToast();
-  // Simplified useForm hook without any resolver.
   const form = useForm<FormData>({
     defaultValues: {
       name: '',
@@ -102,7 +100,7 @@ export function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full" style={{ backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))' }} disabled={form.formState.isSubmitting}>
+              <Button type="submit" className="w-full" variant="accent" disabled={form.formState.isSubmitting}>
                 {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
