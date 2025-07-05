@@ -19,6 +19,7 @@ const fontHeadline = Poppins({
 export const metadata: Metadata = {
   title: '[Nama Anda] | [Gelar/Profesi Anda]',
   description: 'A dedicated Drafter Engineer with over a decade of experience since 2014, specializing in high-risk building construction and transforming complex designs into precise, actionable blueprints.',
+  icons: null,
 };
 
 export default function RootLayout({
