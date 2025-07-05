@@ -12,7 +12,7 @@ export function About() {
           <div className="flex justify-center md:order-last">
               <Image
                 src="https://placehold.co/300x300.png"
-                alt="Alif Fauzan"
+                alt="[Nama Anda]"
                 width={300}
                 height={300}
                 className="rounded-full object-cover shadow-lg w-48 h-48 md:w-64 md:h-64"

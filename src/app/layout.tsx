@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Inter, Poppins } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import { CookieBanner } from '@/components/cookie-banner';
 
 const fontBody = Inter({
   subsets: ['latin'],
@@ -16,7 +17,7 @@ const fontHeadline = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Alif Fauzan | Drafter Engineer',
+  title: '[Nama Anda] | [Gelar/Profesi Anda]',
   description: 'A dedicated Drafter Engineer with over a decade of experience since 2014, specializing in high-risk building construction and transforming complex designs into precise, actionable blueprints.',
 };
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       )}>
         {children}
         <Toaster />
+        <CookieBanner />
       </body>
     </html>
   );
