@@ -4,22 +4,27 @@ export const skills: Skill[] = [
   {
     name: 'AutoCAD',
     imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'architectural drawing',
   },
   {
     name: 'Revit',
     imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: '3d model',
   },
   {
     name: 'SolidWorks',
     imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'mechanical design',
   },
   {
     name: '3D Rendering',
     imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: '3d render',
   },
   {
     name: 'Blueprint',
     imageUrl: 'https://placehold.co/100x100.png',
+    imageHint: 'blueprint plan',
   },
 ];
 
@@ -30,6 +35,7 @@ export const initialProjects: Project[] = [
     description: 'Managed the collection of technical spatial data for Pertamina\'s critical infrastructure projects.',
     tags: ['Pertamina', 'Spatial Data', 'Data Collection'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'data infrastructure',
   },
   {
     id: 'proj2',
@@ -37,6 +43,7 @@ export const initialProjects: Project[] = [
     description: 'Played a key role in the engineering and drafting for the Regional 2 Ultimate Java Backbone fiber optic network.',
     tags: ['Fiber Optic', 'Telecommunications', 'Infrastructure'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'fiber optic',
   },
   {
     id: 'proj3',
@@ -44,6 +51,7 @@ export const initialProjects: Project[] = [
     description: 'Designed and drafted the complete Building Automation System (BAS) for Indriati Hospital in Solo.',
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hospital automation',
   },
   {
     id: 'proj4',
@@ -51,6 +59,7 @@ export const initialProjects: Project[] = [
     description: 'Developed the building automation blueprints for the luxury JW Marriott Hotel in Yogyakarta.',
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hotel building',
   },
   {
     id: 'proj5',
@@ -58,6 +67,7 @@ export const initialProjects: Project[] = [
     description: 'Engineered the comprehensive building automation plans for the renowned Harapan Kita Hospital in Jakarta.',
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hospital building',
   },
   {
     id: 'proj6',
@@ -65,6 +75,7 @@ export const initialProjects: Project[] = [
     description: 'Oversaw the drafting and design for the BAS implementation at the historic Hotel Mercure Batavia in Jakarta.',
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hotel architecture',
   },
   {
     id: 'proj7',
@@ -72,6 +83,7 @@ export const initialProjects: Project[] = [
     description: 'Led the drafting team for the advanced building automation system at Eka Hospital, Cibubur.',
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hospital exterior',
   },
   {
     id: 'proj8',
@@ -79,6 +91,7 @@ export const initialProjects: Project[] = [
     description: 'Created detailed blueprints and schematics for the BAS at Eka Hospital\'s Bekasi facility.',
     tags: ['Building Automation', 'Hospital', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hospital design',
   },
   {
     id: 'proj9',
@@ -86,6 +99,7 @@ export const initialProjects: Project[] = [
     description: 'Managed the building automation system design and drafting for the modern Swiss-Belhotel in Solo.',
     tags: ['Building Automation', 'Hotel', 'BMS'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'hotel modern',
   },
   {
     id: 'proj10',
@@ -93,6 +107,7 @@ export const initialProjects: Project[] = [
     description: 'Led the technical drafting for the upgrade of SCADA system facilities at a PLN Hub Substation in Banten.',
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Upgrade'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'electrical substation',
   },
   {
     id: 'proj11',
@@ -100,6 +115,7 @@ export const initialProjects: Project[] = [
     description: 'Involved in the installation of new SCADA system facilities at a PLN Hub Substation in the Banten region.',
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Installation'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'power lines',
   },
   {
     id: 'proj12',
@@ -107,5 +123,6 @@ export const initialProjects: Project[] = [
     description: 'Managed the drafting and documentation for the installation of new SCADA facilities at a PLN Hub Substation.',
     tags: ['SCADA', 'PLN', 'Electrical Grid', 'Installation'],
     imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'control room',
   },
 ];

@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Inter, Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { CookieBanner } from '@/components/cookie-banner';
 
@@ -10,7 +10,7 @@ const fontBody = Inter({
   variable: '--font-body',
 });
 
-const fontHeadline = Poppins({
+const fontHeadline = Inter({
   subsets: ['latin'],
   weight: ['600', '700', '800'],
   variable: '--font-headline',
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={cn(
         "font-body antialiased",
         fontBody.variable,

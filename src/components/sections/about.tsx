@@ -16,6 +16,7 @@ export function About() {
                 width={300}
                 height={300}
                 className="rounded-full object-cover shadow-lg w-48 h-48 md:w-64 md:h-64"
+                data-ai-hint="portrait professional"
               />
           </div>
           <div className="space-y-4">
