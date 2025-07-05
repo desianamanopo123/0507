@@ -4,32 +4,33 @@
 
 @layer base {
   :root {
-    --background: 220 25% 94%;
-    --foreground: 222 47% 11%;
+    /* Blueprint Theme */
+    --background: 220 15% 96%; /* Soft blueprint gray */
+    --foreground: 222 47% 11%; /* Dark slate */
 
-    --card: 220 25% 97%;
+    --card: 0 0% 100%; /* White cards */
     --card-foreground: 222 47% 11%;
 
-    --popover: 220 25% 97%;
+    --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
     
-    --primary: 231 50% 48%;
+    --primary: 231 50% 48%; /* Deep Blue */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 25% 90%;
+    --secondary: 220 15% 92%; /* Slightly darker gray for secondary elements */
     --secondary-foreground: 222 47% 11%;
     
-    --muted: 220 25% 85%;
+    --muted: 220 15% 88%;
     --muted-foreground: 215 20% 45%;
 
-    --accent: 174 70% 35%;
+    --accent: 174 70% 35%; /* Teal */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 25% 88%;
-    --input: 220 25% 88%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
     --ring: 231 50% 48%;
 
     --chart-1: 220 70% 50%;
@@ -42,19 +43,20 @@
   }
  
   .dark {
-    --background: 228 9% 10%;
+    /* Dark Blueprint Theme */
+    --background: 228 9% 10%; /* Dark slate background */
     --foreground: 210 40% 98%;
     --card: 228 9% 12%;
     --card-foreground: 210 40% 98%;
     --popover: 228 9% 10%;
     --popover-foreground: 210 40% 98%;
-    --primary: 231 50% 58%;
+    --primary: 231 50% 58%; /* Lighter deep blue for dark mode */
     --primary-foreground: 231 83% 10%;
     --secondary: 228 9% 17%;
     --secondary-foreground: 210 40% 98%;
     --muted: 228 9% 17%;
     --muted-foreground: 215 14% 65%;
-    --accent: 174 70% 45%;
+    --accent: 174 70% 45%; /* Lighter teal for dark mode */
     --accent-foreground: 174 100% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
