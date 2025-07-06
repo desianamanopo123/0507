@@ -103,12 +103,21 @@ export default {
           '0%': { 'background-position': '0 0' },
           '100%': { 'background-position': '-40px -40px' },
         },
+        'photo-sway': {
+          '0%, 100%': {
+            transform: 'rotate(3deg)',
+          },
+          '50%': {
+            transform: 'rotate(-3deg)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'background-pan': 'background-pan 15s ease infinite',
         'grid-pan': 'grid-pan 20s linear infinite',
+        'photo-sway': 'photo-sway 5s ease-in-out infinite',
       },
     },
   },
