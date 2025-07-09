@@ -1,7 +1,7 @@
 
 'use client';
 
-import { DraftingCompass, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
@@ -18,8 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <DraftingCompass className="h-6 w-6" />
+          <Link href="/" className="mr-6 flex items-center">
             <span className="font-bold">Rendianto Priadi</span>
           </Link>
         </div>
@@ -45,8 +44,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="grid gap-4 py-4">
-                  <Link href="/" className="mb-4 flex items-center space-x-2">
-                     <DraftingCompass className="h-6 w-6" />
+                  <Link href="/" className="mb-4 flex items-center">
                      <span className="font-bold">Rendianto Priadi</span>
                   </Link>
                   <nav className="grid gap-2">
